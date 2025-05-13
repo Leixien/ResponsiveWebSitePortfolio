@@ -163,8 +163,8 @@ const ContactSection = ({ selectedService }: ContactSectionProps) => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-xl font-bold mb-1">WhatsApp</h4>
-                  <a href="https://wa.me/39123456789" target="_blank" className="text-gray-300 hover:text-primary transition">
-                    +39 123 456 789
+                  <a href="https://wa.me/393661349967" target="_blank" className="text-gray-300 hover:text-primary transition">
+                    +39 366 134 9967
                   </a>
                 </div>
               </div>
