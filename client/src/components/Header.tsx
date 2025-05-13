@@ -42,12 +42,13 @@ const Header = () => {
             e.preventDefault();
             handleNavClick('home');
           }}>
+            <img src="/assets/corona-b2w.png" alt="B2W Logo" className="h-10 mr-2" />
             <div className="text-primary font-heading text-3xl">B2W</div>
           </a>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['home', 'about', 'services', 'testimonials', 'contact'].map((item) => (
+            {['home', 'about', 'services', 'products', 'testimonials', 'contact'].map((item) => (
               <a 
                 key={item}
                 href={`#${item}`}
@@ -59,7 +60,8 @@ const Header = () => {
               >
                 {item === 'home' ? 'Home' : 
                  item === 'about' ? 'Chi sono' : 
-                 item === 'services' ? 'Servizi' : 
+                 item === 'services' ? 'Servizi' :
+                 item === 'products' ? 'Abbigliamento' :
                  item === 'testimonials' ? 'Testimonianze' : 'Contatti'}
               </a>
             ))}

@@ -18,6 +18,7 @@ const Footer = () => {
                 handleNavClick('home');
               }}
             >
+              <img src="/assets/corona-b2w.png" alt="B2W Logo" className="h-8 mr-2" />
               <div className="text-primary font-heading text-3xl">B2W</div>
               <span className="ml-2 text-sm">Born To Win</span>
             </a>

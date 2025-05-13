@@ -100,3 +100,28 @@ export const transformations: TransformationType[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=350"
   }
 ];
+
+export type ProductType = {
+  id: number;
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+};
+
+export const products: ProductType[] = [
+  {
+    id: 1,
+    title: "Felpa B2W Premium",
+    description: "Felpa in cotone pesante premium con logo B2W, perfetta per gli allenamenti e per il tempo libero. Materiale di alta qualità che garantisce comfort e resistenza.",
+    price: "€59,90",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600"
+  },
+  {
+    id: 2,
+    title: "T-Shirt B2W Training",
+    description: "T-shirt tecnica traspirante con logo B2W, ideale per gli allenamenti intensi. Tessuto che assorbe il sudore e mantiene il corpo asciutto anche durante gli sforzi più impegnativi.",
+    price: "€29,90",
+    image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600"
+  }
+];

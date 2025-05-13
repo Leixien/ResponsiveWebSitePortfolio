@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import ProductsSection from "@/components/ProductsSection";
 import CTASection from "@/components/CTASection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
@@ -23,6 +24,7 @@ function HomePage() {
       <HeroSection />
       <AboutSection />
       <ServicesSection setSelectedService={setSelectedService} />
+      <ProductsSection />
       <CTASection />
       <TestimonialsSection />
       <ContactSection selectedService={selectedService} />
