@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 7%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 7%;
+  --primary: 43 77% 52%;  /* Gold accent color */
+  --primary-foreground: 0 0% 7%;
+  --secondary: 0 0% 100%; /* White */
+  --secondary-foreground: 0 0% 7%;
+  --muted: 0 0% 97%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 76% 57%;    /* Red accent */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 43 77% 52%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 0% 7%;   /* Black */
+  --foreground: 0 0% 100%; /* White */
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 10%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 43 77% 52%;  /* Gold accent color */
+  --primary-foreground: 0 0% 7%;
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 0 76% 57%;    /* Red accent */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 43 77% 52%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+}
+
+@layer components {
+  .font-heading {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #F2D680 50%, #D4AF37 100%);
+  }
+  
+  .gold-text {
+    background: linear-gradient(135deg, #D4AF37 0%, #F2D680 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .navbar-fixed {
+    @apply transition-all duration-300;
+  }
+  
+  .transition-transform {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  
+  .testimonial-card {
+    @apply transition-all duration-300;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+}
