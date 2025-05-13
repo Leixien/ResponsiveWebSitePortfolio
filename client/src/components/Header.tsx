@@ -85,7 +85,7 @@ const Header = () => {
           className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden mt-4 bg-primary/90 rounded-lg p-4 shadow-lg`}
         >
           <nav className="flex flex-col space-y-4">
-            {['home', 'about', 'services', 'testimonials', 'contact'].map((item) => (
+            {['home', 'about', 'services', 'products', 'testimonials', 'contact'].map((item) => (
               <a 
                 key={item}
                 href={`#${item}`}
@@ -97,7 +97,8 @@ const Header = () => {
               >
                 {item === 'home' ? 'Home' : 
                  item === 'about' ? 'Chi sono' : 
-                 item === 'services' ? 'Servizi' : 
+                 item === 'services' ? 'Servizi' :
+                 item === 'products' ? 'Abbigliamento' : 
                  item === 'testimonials' ? 'Testimonianze' : 'Contatti'}
               </a>
             ))}

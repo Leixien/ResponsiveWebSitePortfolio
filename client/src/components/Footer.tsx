@@ -31,7 +31,7 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-primary mb-3">Link Utili</h4>
               <ul className="space-y-2">
-                {['home', 'about', 'services', 'testimonials'].map((item) => (
+                {['home', 'about', 'services', 'products', 'testimonials'].map((item) => (
                   <li key={item}>
                     <a 
                       href={`#${item}`}
@@ -43,7 +43,8 @@ const Footer = () => {
                     >
                       {item === 'home' ? 'Home' : 
                        item === 'about' ? 'Chi sono' : 
-                       item === 'services' ? 'Servizi' : 'Testimonianze'}
+                       item === 'services' ? 'Servizi' :
+                       item === 'products' ? 'Abbigliamento' : 'Testimonianze'}
                     </a>
                   </li>
                 ))}
