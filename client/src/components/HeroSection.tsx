@@ -24,8 +24,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl" data-aos="fade-up" data-aos-delay="200">
           <h1 className="text-6xl md:text-8xl font-heading mb-4 leading-tight">
-            <span className="text-white">NATO PER</span>
-            <span className="block gold-text">VINCERE</span>
+            <span className="text-white">BORN TO</span>
+            <span className="block gold-text">WIN</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-body">
             Supera i tuoi limiti e trasforma il tuo corpo con allenamenti personalizzati. Raggiungere i tuoi obiettivi non è mai stato così possibile.
