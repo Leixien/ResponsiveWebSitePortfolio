@@ -6,9 +6,9 @@ const AboutSection = () => {
       description: "I risultati arrivano con l'impegno quotidiano"
     },
     {
-      icon: "fa-fire",
-      title: "TRASFORMAZIONE",
-      description: "Cambia il tuo corpo, cambia la tua vita"
+      icon: "fa-trophy",
+      title: "COMPETIZIONE",
+      description: "La sfida più grande è contro te stesso"
     },
     {
       icon: "fa-bolt",
@@ -29,18 +29,18 @@ const AboutSection = () => {
           <div className="lg:w-1/2" data-aos="fade-right">
             <img 
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Personal Trainer B2W" 
+              alt="Matteo Trocchia - Men's Physique Athlete" 
               className="w-full h-auto rounded-lg shadow-xl" 
             />
           </div>
           
           <div className="lg:w-1/2" data-aos="fade-left">
-            <h3 className="text-3xl font-heading mb-4 text-black">La mia missione è la tua trasformazione</h3>
+            <h3 className="text-3xl font-heading mb-4 text-black">Su di Me – Matteo Trocchia</h3>
             <p className="mb-6 text-lg">
-              Ciao, sono Marco, fondatore di B2W - Born To Win. Da oltre 10 anni aiuto persone come te a superare i propri limiti e raggiungere una forma fisica eccezionale attraverso programmi di allenamento personalizzati e un supporto costante.
+              Mi chiamo <strong>Matteo Trocchia</strong>, ho 26 anni e vengo da <strong>Saviano (NA)</strong>. Sono un atleta della categoria <strong>Men's Physique</strong>, vincitore di competizioni a livello regionale e nazionale.
             </p>
             <p className="mb-6 text-lg">
-              La mia filosofia è semplice: ognuno di noi è nato per vincere, ma la vittoria richiede impegno, disciplina e la giusta guida. Che tu sia un principiante o un atleta esperto, creerò un percorso su misura per te.
+              Ho trasformato la mia passione in una missione: aiutare gli altri a raggiungere il loro massimo potenziale fisico e mentale. Con il progetto <strong>B2W – Born To Win</strong> voglio ispirare chiunque a scegliere la propria vittoria, ogni singolo giorno.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

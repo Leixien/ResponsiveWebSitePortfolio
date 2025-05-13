@@ -57,21 +57,21 @@ export const testimonials: TestimonialType[] = [
   {
     id: 1,
     name: "Marco S.",
-    text: "Ho provato molti personal trainer, ma solo con B2W ho finalmente visto dei risultati concreti. In 3 mesi ho perso 8kg e guadagnato massa muscolare!",
+    text: "Ho provato molti personal trainer, ma solo con Matteo ho finalmente visto dei risultati concreti. In 3 mesi ho perso 8kg e guadagnato massa muscolare!",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     rating: 5
   },
   {
     id: 2,
     name: "Giulia T.",
-    text: "La scheda personalizzata ha completamente cambiato il mio approccio all'allenamento. I risultati sono arrivati rapidamente e la motivazione è sempre alta!",
+    text: "La scheda personalizzata ha completamente cambiato il mio approccio all'allenamento. I consigli di Matteo mi hanno aiutato ad ottenere risultati rapidamente!",
     image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     rating: 4.5
   },
   {
     id: 3,
     name: "Alessandro P.",
-    text: "Le sessioni one-to-one hanno fatto la differenza! Tecnica migliorata, più motivazione e risultati visibili. B2W è sinonimo di professionalità.",
+    text: "Allenarsi con un atleta Men's Physique fa davvero la differenza! Tecnica migliorata, più motivazione e risultati visibili. B2W è sinonimo di professionalità.",
     image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     rating: 5
   }

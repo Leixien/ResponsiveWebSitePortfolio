@@ -151,8 +151,8 @@ const ContactSection = ({ selectedService }: ContactSectionProps) => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-xl font-bold mb-1">Email</h4>
-                  <a href="mailto:info@b2w-fitness.it" className="text-gray-300 hover:text-primary transition">
-                    info@b2w-fitness.it
+                  <a href="mailto:matteo.trocchia@b2w-fitness.it" className="text-gray-300 hover:text-primary transition">
+                    matteo.trocchia@b2w-fitness.it
                   </a>
                 </div>
               </div>
@@ -176,7 +176,7 @@ const ContactSection = ({ selectedService }: ContactSectionProps) => {
                 <div className="ml-4">
                   <h4 className="text-xl font-bold mb-1">Zona di attività</h4>
                   <p className="text-gray-300">
-                    Milano e online in tutta Italia
+                    Saviano (NA), Campania e online in tutta Italia
                   </p>
                 </div>
               </div>
@@ -184,13 +184,13 @@ const ContactSection = ({ selectedService }: ContactSectionProps) => {
               <div className="pt-6 border-t border-gray-800">
                 <h4 className="text-xl font-bold mb-4">Seguimi sui social</h4>
                 <div className="flex space-x-4">
-                  <a href="https://instagram.com" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://instagram.com/matteo_trocchia" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
                     <i className="fab fa-instagram text-xl"></i>
                   </a>
-                  <a href="https://tiktok.com" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://tiktok.com/@matteo_trocchia" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
                     <i className="fab fa-tiktok text-xl"></i>
                   </a>
-                  <a href="https://youtube.com" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://youtube.com/@matteotrocchia" target="_blank" className="bg-gray-800 text-primary hover:bg-primary hover:text-black w-12 h-12 rounded-full flex items-center justify-center transition-colors">
                     <i className="fab fa-youtube text-xl"></i>
                   </a>
                 </div>
