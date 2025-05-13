@@ -1,24 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { scrollToElement } from '@/lib/utils';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -32,9 +16,7 @@ const Header = () => {
   return (
     <header 
       id="navbar" 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-primary/95 shadow-md' : 'bg-transparent'
-      }`}
+      className="fixed w-full z-50 transition-all duration-300 bg-primary/95 shadow-md"
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
