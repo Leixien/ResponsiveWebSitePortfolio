@@ -1,0 +1,89 @@
+Crea un sito web responsive in HTML, CSS (preferibilmente TailwindCSS) e JavaScript (o React se richiesto) per un personal trainer professionista che offre servizi personalizzati e promuove il proprio personal brand "B2W - Born To Win".
+Il sito deve essere one-page scroll o multipagina semplice, SEO-friendly, esteticamente pulito e motivante.
+Di seguito trovi le sezioni richieste, lo stile, le funzionalità e il contenuto base:
+
+STILE E BRANDING
+Nome brand: B2W – Born To Win
+
+Colori predominanti: Nero, bianco, oro/metallo, accenti rossi
+
+Font: Moderno, deciso, sans-serif (es. Montserrat, Bebas Neue per i titoli)
+
+Tone of voice: Motivazionale, diretto, professionale
+
+Design: Hero section impattante con logo B2W + motto (“Nato per vincere”), sfondo motivazionale (es. silhouette in allenamento o gym grunge)
+
+SEZIONI RICHIESTE
+Header + Navbar
+
+Logo B2W a sinistra
+
+Link: Home | Servizi | Chi sono | Testimonianze | Contatti
+
+Sticky navbar con transizione smooth
+
+Hero Section
+
+Titolo: “Nato per Vincere”
+
+Sottotitolo motivazionale
+
+Call to Action: “Prenota la tua consulenza”
+
+Bottone che scorre verso "Servizi"
+
+Chi Sono / About
+
+Testo: breve bio del personal trainer (placeholder)
+
+Foto professionale
+
+Valori: costanza, trasformazione, determinazione
+
+Servizi Offerti
+
+Lista graficamente divisa in card con prezzi e brevi descrizioni
+
+Scheda Allenamento Personalizzata
+
+Scheda Allenamento + Consigli Alimentari
+
+Allenamenti One-to-One (dal vivo o online)
+
+Ogni card con bottone “Richiedi ora” che apre un form di contatto
+
+Testimonianze / Trasformazioni
+
+Slider con frasi di clienti (placeholder)
+
+Immagini “before & after” opzionali
+
+Feedback con stelle o punteggio
+
+Contatti
+
+Form di contatto (Nome, Email, Servizio richiesto, Messaggio)
+
+WhatsApp click-to-chat
+
+Email e social link (Instagram, TikTok, YouTube)
+
+Footer
+
+Logo B2W mini
+
+Link utili
+
+Copyright + link privacy policy
+
+FUNZIONALITÀ RICHIESTE
+Responsive design (mobile-first)
+
+Scroll animation o reveal effect (tipo AOS)
+
+SEO tag base (title, description, favicon, alt img)
+
+Facile da aggiornare in HTML/CSS o integrabile con un CMS statico (es. Netlify CMS)
+
+Possibilità futura di espandere in blog o shop (non implementare ora)
+
