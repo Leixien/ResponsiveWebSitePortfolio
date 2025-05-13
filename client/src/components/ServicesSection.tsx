@@ -5,9 +5,12 @@ interface ServicesSectionProps {
 }
 
 const ServicesSection = ({ setSelectedService }: ServicesSectionProps) => {
+  // Function to open WhatsApp for service request
   const handleServiceRequest = (serviceTitle: string) => {
-    setSelectedService(serviceTitle);
-    scrollToElement('contact');
+    const phoneNumber = "393661349967";
+    const message = `Ciao, sono interessato al servizio "${serviceTitle}" di B2W - Born To Win. Vorrei ricevere maggiori informazioni.`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

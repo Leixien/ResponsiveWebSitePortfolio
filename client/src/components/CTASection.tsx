@@ -1,6 +1,13 @@
 import { scrollToElement } from '@/lib/utils';
 
 const CTASection = () => {
+  // Function to open WhatsApp for consultation
+  const handleContactWhatsApp = () => {
+    const phoneNumber = "393661349967";
+    const message = "Ciao, sono pronto a iniziare il mio percorso con B2W - Born To Win!";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
   return (
     <section className="py-16 relative">
       {/* Background Image */}
@@ -22,7 +29,7 @@ const CTASection = () => {
             Non rimandare più. Inizia oggi il percorso verso la tua migliore versione.
           </p>
           <button 
-            onClick={() => scrollToElement('contact')}
+            onClick={handleContactWhatsApp}
             className="inline-block bg-primary text-black py-3 px-10 rounded-md font-bold text-lg hover:bg-opacity-90 transition"
           >
             INIZIA ORA

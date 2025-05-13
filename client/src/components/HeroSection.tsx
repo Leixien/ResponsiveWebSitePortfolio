@@ -1,6 +1,13 @@
 import { scrollToElement } from '@/lib/utils';
 
 const HeroSection = () => {
+  // Function to open WhatsApp for consultation
+  const handleContactWhatsApp = () => {
+    const phoneNumber = "393661349967";
+    const message = "Ciao, sono interessato a prenotare una consulenza con B2W - Born To Win.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -31,7 +38,7 @@ const HeroSection = () => {
               Scopri i Servizi
             </button>
             <button 
-              onClick={() => scrollToElement('contact')} 
+              onClick={handleContactWhatsApp} 
               className="border-2 border-white py-3 px-8 rounded-md font-body font-bold text-center hover:bg-white hover:text-black transition"
             >
               Prenota Consulenza

@@ -3,8 +3,8 @@ import { type ProductType, products } from '@/lib/utils';
 const ProductsSection = () => {
   // Function to open WhatsApp with a preset message
   const handleBuyProduct = (productName: string) => {
-    // WhatsApp number - replace with the actual number
-    const phoneNumber = "39123456789";
+    // WhatsApp number with the client's actual number
+    const phoneNumber = "393661349967";
     const message = `Ciao, vorrei acquistare ${productName} della collezione B2W - Born To Win.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
