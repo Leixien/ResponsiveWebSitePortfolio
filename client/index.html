@@ -14,6 +14,16 @@
     <meta property="og:title" content="Matteo Trocchia | Personal Trainer & Men's Physique Athlete">
     <meta property="og:description" content="Matteo Trocchia, atleta Men's Physique e personal trainer professionista. Scopri i servizi di allenamento personalizzati con B2W - Born To Win.">
     <meta property="og:type" content="website">
+    
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

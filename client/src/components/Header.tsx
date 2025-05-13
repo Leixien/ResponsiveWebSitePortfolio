@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { scrollToElement } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
           </a>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {['home', 'about', 'services', 'products', 'testimonials', 'contact'].map((item) => (
               <a 
                 key={item}
@@ -47,6 +48,7 @@ const Header = () => {
                  item === 'testimonials' ? 'Testimonianze' : 'Contatti'}
               </a>
             ))}
+            <ThemeToggle />
           </nav>
           
           {/* Mobile Navigation Toggle */}
@@ -84,6 +86,9 @@ const Header = () => {
                  item === 'testimonials' ? 'Testimonianze' : 'Contatti'}
               </a>
             ))}
+            <div className="pt-2 flex justify-start">
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       </div>
