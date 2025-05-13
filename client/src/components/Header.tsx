@@ -25,7 +25,7 @@ const Header = () => {
             handleNavClick('home');
           }}>
             <img src="/assets/corona-b2w.png" alt="B2W Logo" className="h-10 mr-2" />
-            <div className="text-primary font-heading text-3xl">B2W</div>
+            <div className="text-gold font-heading text-3xl">B2W</div>
           </a>
           
           {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Header = () => {
                   e.preventDefault();
                   handleNavClick(item);
                 }}
-                className="font-body font-semibold hover:text-primary transition"
+                className="font-body font-semibold text-white hover:text-gold transition"
               >
                 {item === 'home' ? 'Home' : 
                  item === 'about' ? 'Chi sono' : 
@@ -75,7 +75,7 @@ const Header = () => {
                   e.preventDefault();
                   handleNavClick(item);
                 }}
-                className="font-body font-semibold hover:text-primary transition"
+                className="font-body font-semibold text-white hover:text-gold transition"
               >
                 {item === 'home' ? 'Home' : 
                  item === 'about' ? 'Chi sono' : 
