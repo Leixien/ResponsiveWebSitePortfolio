@@ -1,0 +1,27 @@
+{
+  "name": "B2W - Born To Win | Matteo Trocchia",
+  "short_name": "B2W",
+  "description": "Personal Training e Coaching con Matteo Trocchia - Atleta Men's Physique",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/corona-b2w.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/corona-b2w.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["fitness", "health", "sports"],
+  "lang": "it",
+  "dir": "ltr"
+}
