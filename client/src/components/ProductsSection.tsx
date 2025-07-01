@@ -11,14 +11,14 @@ const ProductsSection = () => {
   };
 
   return (
-    <section id="products" className="py-20 bg-neutral text-black">
+    <section id="products" className="py-20 bg-gray-800 text-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-5xl mb-2 gold-text">
             ABBIGLIAMENTO
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="max-w-2xl mx-auto text-lg">
+          <p className="max-w-2xl mx-auto text-lg text-gray-300">
             Indossa il marchio Born To Win e mostra al mondo la tua
             determinazione
           </p>
@@ -28,7 +28,7 @@ const ProductsSection = () => {
           {products.map((product: ProductType) => (
             <div
               key={product.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
               data-aos="fade-up"
               data-aos-delay={100 * product.id}
             >
@@ -41,15 +41,15 @@ const ProductsSection = () => {
               </div>
 
               <div className="p-6">
-                <h3 className="font-heading text-2xl mb-2">{product.title}</h3>
+                <h3 className="font-heading text-2xl mb-2 text-gray-100">{product.title}</h3>
                 <div className="w-12 h-1 bg-primary mb-4"></div>
-                <p className="mb-6 text-gray-700">{product.description}</p>
+                <p className="mb-6 text-gray-300">{product.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-primary text-2xl font-heading">
+                  <span className="text-primary text-2xl font-heading font-bold">
                     {product.price}
                   </span>
                   <button
-                    className="bg-accent text-white py-2 px-6 rounded font-bold hover:bg-opacity-90 transition"
+                    className="bg-accent text-white py-2 px-6 rounded font-bold hover:bg-red-600 transition-all duration-300 shadow-lg"
                     onClick={() => handleBuyProduct(product.title)}
                   >
                     Acquista

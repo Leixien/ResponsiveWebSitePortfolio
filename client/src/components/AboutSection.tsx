@@ -18,7 +18,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-neutral text-black">
+    <section id="about" className="py-20 bg-gray-800 text-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-5xl mb-2 gold-text">CHI SONO</h2>
@@ -35,25 +35,25 @@ const AboutSection = () => {
           </div>
           
           <div className="lg:w-1/2" data-aos="fade-left">
-            <h3 className="text-3xl font-heading mb-4 text-black">Su di Me – Matteo Trocchia</h3>
-            <p className="mb-6 text-lg">
-              Mi chiamo <strong>Matteo Trocchia</strong>, ho 26 anni e vengo da <strong>Saviano (NA)</strong>. Sono un atleta della categoria <strong>Men's Physique</strong>, vincitore di competizioni a livello regionale e nazionale.
+            <h3 className="text-3xl font-heading mb-4 text-gray-100">Su di Me – Matteo Trocchia</h3>
+            <p className="mb-6 text-lg text-gray-300">
+              Mi chiamo <strong className="text-white">Matteo Trocchia</strong>, ho 26 anni e vengo da <strong className="text-white">Saviano (NA)</strong>. Sono un atleta della categoria <strong className="text-white">Men's Physique</strong>, vincitore di competizioni a livello regionale e nazionale.
             </p>
-            <p className="mb-6 text-lg">
-              Ho trasformato la mia passione in una missione: aiutare gli altri a raggiungere il loro massimo potenziale fisico e mentale. Con il progetto <strong>B2W – Born To Win</strong> voglio ispirare chiunque a scegliere la propria vittoria, ogni singolo giorno.
+            <p className="mb-6 text-lg text-gray-300">
+              Ho trasformato la mia passione in una missione: aiutare gli altri a raggiungere il loro massimo potenziale fisico e mentale. Con il progetto <strong className="text-white">B2W – Born To Win</strong> voglio ispirare chiunque a scegliere la propria vittoria, ogni singolo giorno.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               {values.map((value, index) => (
                 <div 
                   key={index} 
-                  className="bg-white p-6 rounded-lg shadow-md text-center"
+                  className="bg-gray-700 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="text-primary text-3xl mb-2">
                     <i className={`fas ${value.icon}`}></i>
                   </div>
-                  <h4 className="font-heading text-xl mb-2">{value.title}</h4>
-                  <p className="text-gray-700">
+                  <h4 className="font-heading text-xl mb-2 text-gray-100">{value.title}</h4>
+                  <p className="text-gray-300">
                     {value.description}
                   </p>
                 </div>

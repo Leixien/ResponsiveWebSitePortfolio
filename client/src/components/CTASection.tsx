@@ -25,12 +25,12 @@ const CTASection = () => {
           <h2 className="font-heading text-4xl md:text-5xl mb-6 gold-text">
             SUPERA I TUOI LIMITI
           </h2>
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-8 text-gray-200">
             Non rimandare più. Inizia oggi il percorso verso la tua migliore versione.
           </p>
           <button 
             onClick={handleContactWhatsApp}
-            className="inline-block bg-primary text-black py-3 px-10 rounded-md font-bold text-lg hover:bg-opacity-90 transition"
+            className="inline-block bg-primary text-black py-3 px-10 rounded-md font-bold text-lg hover:bg-yellow-500 transition-all duration-300 shadow-lg"
           >
             INIZIA ORA
           </button>

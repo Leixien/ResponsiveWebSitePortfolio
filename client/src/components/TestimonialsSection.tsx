@@ -52,12 +52,12 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-neutral text-black">
+    <section id="testimonials" className="py-20 bg-gray-800 text-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-5xl mb-2 gold-text">TESTIMONIANZE</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="max-w-2xl mx-auto text-lg">
+          <p className="max-w-2xl mx-auto text-lg text-gray-300">
             Ecco cosa dicono le persone che hanno scelto B2W per la loro trasformazione
           </p>
         </div>
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
             >
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="testimonial-card w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                  <div className="bg-white rounded-lg shadow-lg p-6 h-full">
+                  <div className="bg-gray-700 rounded-lg shadow-lg p-6 h-full hover:shadow-xl transition-shadow duration-300">
                     <div className="flex items-center mb-4">
                       <img 
                         src={testimonial.image}
@@ -80,13 +80,13 @@ const TestimonialsSection = () => {
                         className="w-16 h-16 rounded-full object-cover" 
                       />
                       <div className="ml-4">
-                        <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                        <h4 className="font-bold text-lg text-gray-100">{testimonial.name}</h4>
                         <div className="flex text-primary">
                           {renderStars(testimonial.rating)}
                         </div>
                       </div>
                     </div>
-                    <p className="italic text-gray-700">
+                    <p className="italic text-gray-300">
                       "{testimonial.text}"
                     </p>
                   </div>

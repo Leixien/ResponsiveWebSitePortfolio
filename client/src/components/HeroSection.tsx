@@ -27,19 +27,19 @@ const HeroSection = () => {
             <span className="text-white">BORN TO</span>
             <span className="block gold-text">WIN</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-body">
+          <p className="text-xl md:text-2xl mb-8 font-body text-gray-200">
             Supera i tuoi limiti e trasforma il tuo corpo con allenamenti personalizzati. Raggiungere i tuoi obiettivi non è mai stato così possibile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
               onClick={() => scrollToElement('services')} 
-              className="bg-primary text-black py-3 px-8 rounded-md font-body font-bold text-center hover:bg-opacity-90 transition"
+              className="bg-primary text-black py-3 px-8 rounded-md font-body font-bold text-center hover:bg-yellow-500 transition-all duration-300 shadow-lg"
             >
               Scopri i Servizi
             </button>
             <button 
               onClick={handleContactWhatsApp} 
-              className="border-2 border-white py-3 px-8 rounded-md font-body font-bold text-center hover:bg-white hover:text-black transition"
+              className="border-2 border-white text-white py-3 px-8 rounded-md font-body font-bold text-center hover:bg-white hover:text-black transition-all duration-300 shadow-lg"
             >
               Prenota Consulenza
             </button>

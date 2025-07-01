@@ -41,13 +41,13 @@ const ServicesSection = ({ setSelectedService }: ServicesSectionProps) => {
               <div className="p-6">
                 <h3 className="font-heading text-2xl mb-2">{service.title}</h3>
                 <div className="w-12 h-1 bg-primary mb-4"></div>
-                <p className="mb-6 text-gray-300">
+                <p className="mb-6 text-gray-300 leading-relaxed">
                   {service.description}
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-primary text-2xl font-heading">{service.price}</span>
+                  <span className="text-primary text-2xl font-heading font-bold">{service.price}</span>
                   <button 
-                    className="bg-primary text-black py-2 px-6 rounded font-bold hover:bg-opacity-90 transition"
+                    className="bg-primary text-black py-2 px-6 rounded font-bold hover:bg-yellow-500 transition-all duration-300 shadow-lg"
                     onClick={() => handleServiceRequest(service.title)}
                   >
                     Richiedi Ora
