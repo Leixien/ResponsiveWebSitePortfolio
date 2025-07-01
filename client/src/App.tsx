@@ -13,6 +13,7 @@ import CTASection from "@/components/CTASection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useState } from "react";
 
 function HomePage() {
@@ -29,6 +30,7 @@ function HomePage() {
       <TestimonialsSection />
       <ContactSection selectedService={selectedService} />
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

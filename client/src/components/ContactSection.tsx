@@ -78,29 +78,57 @@ const ContactSection = ({ selectedService }: ContactSectionProps) => {
           <div className="bg-gray-900 p-8 rounded-lg shadow-lg" data-aos="fade-right">
             <h3 className="font-heading text-3xl mb-6">Invia un messaggio</h3>
             
-            <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium mb-2">Nome e Cognome *</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Il tuo nome" 
-                  className={`w-full px-4 py-3 bg-gray-800 border ${errors.name ? 'border-red-500' : 'border-gray-700'} rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-white`}
-                  {...register('name')}
-                />
-                {errors.name && <p className="mt-1 text-red-500 text-xs">{errors.name.message}</p>}
+            <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <div className="group">
+                <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300 group-focus-within:text-primary transition-colors duration-300">
+                  Nome e Cognome *
+                </label>
+                <div className="relative">
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Il tuo nome completo" 
+                    className={`w-full px-4 py-4 bg-gray-800 border ${
+                      errors.name 
+                        ? 'border-red-500 focus:border-red-500' 
+                        : 'border-gray-700 focus:border-primary'
+                    } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 text-white placeholder-gray-400 transition-all duration-300`}
+                    {...register('name')}
+                  />
+                  <i className="fas fa-user absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+                {errors.name && (
+                  <p className="mt-2 text-red-400 text-sm flex items-center gap-1">
+                    <i className="fas fa-exclamation-circle"></i>
+                    {errors.name.message}
+                  </p>
+                )}
               </div>
               
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium mb-2">Email *</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  placeholder="La tua email" 
-                  className={`w-full px-4 py-3 bg-gray-800 border ${errors.email ? 'border-red-500' : 'border-gray-700'} rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-white`}
-                  {...register('email')}
-                />
-                {errors.email && <p className="mt-1 text-red-500 text-xs">{errors.email.message}</p>}
+              <div className="group">
+                <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300 group-focus-within:text-primary transition-colors duration-300">
+                  Email *
+                </label>
+                <div className="relative">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="La tua email" 
+                    className={`w-full px-4 py-4 bg-gray-800 border ${
+                      errors.email 
+                        ? 'border-red-500 focus:border-red-500' 
+                        : 'border-gray-700 focus:border-primary'
+                    } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 text-white placeholder-gray-400 transition-all duration-300`}
+                    {...register('email')}
+                  />
+                  <i className="fas fa-envelope absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+                {errors.email && (
+                  <p className="mt-2 text-red-400 text-sm flex items-center gap-1">
+                    <i className="fas fa-exclamation-circle"></i>
+                    {errors.email.message}
+                  </p>
+                )}
               </div>
               
               <div className="mb-4">

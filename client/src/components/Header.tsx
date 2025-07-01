@@ -1,8 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { scrollToElement } from '@/lib/utils';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
+  // Track active section based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'services', 'products', 'testimonials', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -38,13 +63,22 @@ const Header = () => {
                   e.preventDefault();
                   handleNavClick(item);
                 }}
-                className="font-body font-semibold text-white hover:text-primary transition-colors duration-300"
+                className={`relative font-body font-semibold transition-colors duration-300 py-2 px-1 ${
+                  activeSection === item 
+                    ? 'text-primary' 
+                    : 'text-white hover:text-primary'
+                }`}
               >
                 {item === 'home' ? 'Home' : 
                  item === 'about' ? 'Chi sono' : 
                  item === 'services' ? 'Servizi' :
                  item === 'products' ? 'Abbigliamento' :
                  item === 'testimonials' ? 'Testimonianze' : 'Contatti'}
+                
+                {/* Active indicator */}
+                {activeSection === item && (
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full"></div>
+                )}
               </a>
             ))}
           </nav>
