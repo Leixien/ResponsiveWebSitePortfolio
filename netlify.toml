@@ -24,12 +24,13 @@
   command = "npm ci && npm run build"
 
 # Redirect rules for SPA (Single Page Application)
+# This is crucial for React Router to work correctly
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Headers for security and performance
+# Security and performance headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -37,13 +38,16 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:;"
 
-# Cache static assets
+# Cache static assets for better performance
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Environment variables (set these in Netlify UI)
-# NODE_ENV = "production"
-# DATABASE_URL = "your_neon_database_url"
+# Cache HTML with short TTL for updates
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

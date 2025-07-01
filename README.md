@@ -127,7 +127,7 @@ MatteoTrocchia/
    - Clicca "New site from Git"
    - Seleziona il tuo repository GitHub
 
-2. **Configurazione build**:
+2. **Configurazione build** (dovrebbe essere automatica con netlify.toml):
    ```
    Build command: npm run build
    Publish directory: dist
@@ -148,9 +148,19 @@ npm install -g netlify-cli
 # Login a Netlify
 netlify login
 
+# Build del progetto
+npm run build
+
 # Deploy del sito
 netlify deploy --prod --dir=dist
 ```
+
+### Risoluzione Problemi Deploy
+
+Se vedi "Page not found" su Netlify:
+1. Verifica che `publish directory` sia impostato su `dist`
+2. Controlla che `netlify.toml` sia presente nella root
+3. Assicurati che `_redirects` sia presente in `client/public/`
 
 ## 🗃️ Database
 
